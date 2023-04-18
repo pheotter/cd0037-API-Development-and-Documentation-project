@@ -84,7 +84,7 @@ class QuestionView extends Component {
 
   submitSearch = (searchTerm) => {
     $.ajax({
-      url: `/questions`, //TODO: update request URL
+      url: `/questions/search`, //TODO: update request URL, add by myself
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json',
@@ -148,8 +148,10 @@ class QuestionView extends Component {
                 {this.state.categories[id]}
                 <img
                   className='category'
+
                   alt={`${this.state.categories[id].toLowerCase()}`}
                   src={`${this.state.categories[id].toLowerCase()}.svg`}
+
                 />
               </li>
             ))}
