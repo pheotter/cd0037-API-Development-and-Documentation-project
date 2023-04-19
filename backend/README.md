@@ -37,7 +37,7 @@ createdb trivia
 Populate the database using the `trivia.psql` file provided. From the `backend` folder in terminal run:
 
 ```bash
-psql trivia < trivia.psql
+psql -U postgres trivia < trivia.psql
 ```
 
 ### Run the Server
@@ -64,7 +64,7 @@ In order to run tests navigate to the backend folder and run the following comma
 ```bash
 dropdb trivia_test
 createdb trivia_test
-psql trivia_test < trivia.psql
+psql -U postgres trivia_test < trivia.psql
 python3 test_flaskr.py
 ```
 The first time you run the tests, omit the dropdb command. 
