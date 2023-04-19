@@ -52,7 +52,7 @@ export FLASK_DEBUG=1
 flask run
 ```
 
-Setting the FLASK_DEBUG variable to true means that we are orking in development mode and it shows an interactive debugger in the console and restarts the server whenever changes are made.
+Setting the FLASK_DEBUG variable to true means that we are working in development mode and it shows an interactive debugger in the console and restarts the server whenever changes are made.
 
 Setting the FLASK_APP variable to flaskr will directs our application to use the `__init__.py` file in our flaskr folder
 
