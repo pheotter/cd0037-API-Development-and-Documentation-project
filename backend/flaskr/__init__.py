@@ -176,7 +176,7 @@ def create_app(config_file='development'):
     # GET questions from a category
     @app.route('/categories/<int:category_id>/questions')
     def get_specific_questions(category_id):
-        # if Category.query.get(category_id) is None:
+        #if Category.query.get(category_id) is None:
         if db.session.get(Category, category_id) is None:
             abort(404)
         try:
